@@ -8,15 +8,30 @@ import java.util.Scanner;
 
 public class Ejercicio8 {
     public static void main(String[] args) {
-   		int precioMetros, metros;
-        // Creacion de objeto
-		Scanner orlando = new Scanner(System.in);
-		// Datos de entrada
-		System.out.print("Ingresa el precio por metro: ");
-        precioMetros = orlando.nextInt();
-        System.out.print("Metros trabajados: ");
-        metros = orlando.nextInt();
-		System.out.printf("Pago: $" + (precioMetros * metros) + "\n");
+        int precioPorMetro, metrosConsumidos;
+
+        // Creación del objeto Scanner
+        Scanner orlando = new Scanner(System.in);
+
+        // Entrada de datos con validación para el precio por metro
+        System.out.print("Ingresa el precio por metro: ");
+        precioPorMetro = orlando.nextInt();
+        if (precioPorMetro <= 0) {
+            System.out.println("Error: El precio por metro debe ser un valor positivo.");
+            return;
+        }
+
+        // Entrada de datos con validación para los metros consumidos
+        System.out.print("Metros consumidos: ");
+        metrosConsumidos = orlando.nextInt();
+        if (metrosConsumidos < 0) {
+            System.out.println("Error: Los metros consumidos deben ser un valor no negativo.");
+            return;
+        }
+
+        // Cálculo del pago
+        int pagoTotal = precioPorMetro * metrosConsumidos;
+        System.out.printf("Pago total: $%d%n", pagoTotal);
     }
 }
 
