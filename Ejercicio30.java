@@ -24,3 +24,4 @@ public class Ejercicio30 {
 		}
 
 		// Llenar el segundo arreglo (en orden inverso)
+		for (int i = 4; i >= 0; i--) {
