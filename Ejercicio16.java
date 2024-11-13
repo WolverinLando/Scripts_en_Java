@@ -2,21 +2,32 @@
  * Fecha:  14-07-2023
  * Correo: orlandourbanotrejo@gmail.com 
  *
- * Algoritmo que calcula el presupuesto anual en tres areas de un hospital */
+ * Algoritmo que calcula el presupuesto anual en tres áreas de un hospital.
+ */
 
 import java.util.Scanner;
 
 public class Ejercicio16 {
     public static void main(String[] args) {
-        double presupuesto;
-		// Creacion de objeto
+        // Obtener el presupuesto anual
+        double presupuesto = obtenerPresupuestoAnual();
+
+        // Calcular y mostrar los presupuestos para cada área
+        mostrarPresupuesto("Urgencias", presupuesto * 0.37);
+        mostrarPresupuesto("Pediatría", presupuesto * 0.42);
+        mostrarPresupuesto("Traumatología", presupuesto * 0.21);
+    }
+
+    // Método para obtener el presupuesto anual
+    private static double obtenerPresupuestoAnual() {
         Scanner orlando = new Scanner(System.in);
-		// Datos de entrada
         System.out.print("Presupuesto anual: ");
-        presupuesto = orlando.nextInt();
-        System.out.print("Presupuesto Urgencias: $" + (presupuesto * 0.37) + "\n");
-        System.out.print("Presupuesto Pediatria: $" + (presupuesto * 0.42) + "\n");
-        System.out.print("Presupuesto Traumatologia: $" + (presupuesto * 0.21) + "\n");
+        return orlando.nextDouble();
+    }
+
+    // Método para mostrar el presupuesto de una área
+    private static void mostrarPresupuesto(String area, double presupuestoArea) {
+        System.out.printf("Presupuesto %s: $%.2f%n", area, presupuestoArea);
     }
 }
 
