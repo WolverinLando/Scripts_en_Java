@@ -4,3 +4,5 @@
 * Ejercicio: Haciendo uso de 2 arreglos, almacena 5 números en cada arreglo,
 posteriormente vas a multiplicar los arreglo
 */
+
+import java.util.Scanner;
