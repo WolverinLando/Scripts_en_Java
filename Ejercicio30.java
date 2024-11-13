@@ -18,3 +18,4 @@ public class Ejercicio30 {
 		int[] Resultado = new int[5];
 
 		// Llenar el primer arreglo
+		for (int i = 0; i < 5; i++) {
