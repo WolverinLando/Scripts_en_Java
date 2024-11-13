@@ -25,3 +25,4 @@ public class Ejercicio30 {
 
 		// Llenar el segundo arreglo (en orden inverso)
 		for (int i = 4; i >= 0; i--) {
+			System.out.print("Valor " + (i + 1) + " para el segundo arreglo (orden inverso): ");
