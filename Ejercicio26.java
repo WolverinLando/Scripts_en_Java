@@ -1,26 +1,46 @@
 /* Autor:  Orlando Urbano Trejo @Lando
  * Fecha:  17-07-2023
  * Correo: orlandourbanotrejo@gmail.com
- * Algoritmo que calcula la calificacion de N alumnos y obtiene el promedio general */
+ * Algoritmo que calcula la calificación de N alumnos y obtiene el promedio general
+ */
 
 import java.util.Scanner;
 
-public class Ejercicio26{
-	public static void main(String[] args){
-		int alumno, edad;
-		double suma = 0, promedio = 0;
-		// Creacion de objeto
-		Scanner orlando = new Scanner(System.in);
-		// Datos de entrada
-		System.out.print("Cuantos alumnos hay en el salon: ");
-		alumno = orlando.nextInt();
-		for(int i = 1; i <= alumno; i++){
-			System.out.print("Edad del alumno " + i +": " );
-			edad = orlando.nextInt();
-			suma += edad;
-		}
-		// Operaciones
-		promedio = suma / alumno;
-		System.out.print("El promedio de las edades de los alumnos es: " + promedio + "\n");
-	}
+public class Ejercicio26 {
+    public static void main(String[] args) {
+        // Crear objeto Scanner para entrada de datos
+        Scanner orlando = new Scanner(System.in);
+
+        // Obtener la cantidad de alumnos
+        int numAlumnos = obtenerNumeroAlumnos(orlando);
+
+        // Calcular el promedio de las edades de los alumnos
+        double promedio = calcularPromedioEdades(orlando, numAlumnos);
+
+        // Mostrar el resultado
+        mostrarPromedio(promedio);
+    }
+
+    // Método para obtener el número de alumnos
+    private static int obtenerNumeroAlumnos(Scanner scanner) {
+        System.out.print("¿Cuántos alumnos hay en el salón?: ");
+        return scanner.nextInt();
+    }
+
+    // Método para calcular el promedio de las edades de los alumnos
+    private static double calcularPromedioEdades(Scanner scanner, int numAlumnos) {
+        double sumaEdades = 0;
+        for (int i = 1; i <= numAlumnos; i++) {
+            System.out.print("Edad del alumno " + i + ": ");
+            int edad = scanner.nextInt();
+            sumaEdades += edad;
+        }
+        return sumaEdades / numAlumnos;
+    }
+
+    // Método para mostrar el promedio calculado
+    private static void mostrarPromedio(double promedio) {
+        System.out.println("El promedio de las edades de los alumnos es: " + promedio);
+    }
 }
+
