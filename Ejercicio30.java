@@ -11,3 +11,5 @@ public class Ejercicio30 {
 	public static void main(String[] args) {
 		// Crear objeto Scanner para la entrada de datos
 		Scanner Orlando = new Scanner(System.in)
+
+		// Crear 3 arreglosde tamaño 3
