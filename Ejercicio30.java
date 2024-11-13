@@ -15,3 +15,4 @@ public class Ejercicio30 {
 		// Crear 3 arreglosde tamaño 3
 		int[] Primero = new int[5];
 		int[] Segundo = new int[5];
+		int[] Resultado = new int[5];
