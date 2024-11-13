@@ -13,3 +13,4 @@ public class Ejercicio30 {
 		Scanner Orlando = new Scanner(System.in)
 
 		// Crear 3 arreglosde tamaño 3
+		int[] Primero = new int[5];
