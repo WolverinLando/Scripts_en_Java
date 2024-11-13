@@ -28,3 +28,5 @@ public class Ejercicio30 {
 			System.out.print("Valor " + (i + 1) + " para el segundo arreglo (orden inverso): ");
 			Segundo[i] = Orlando.nextInt();
 		}
+
+		// Multiplicar los elementos correspondientes de ambos arreglos
