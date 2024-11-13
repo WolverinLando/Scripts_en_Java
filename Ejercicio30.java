@@ -19,3 +19,4 @@ public class Ejercicio30 {
 
 		// Llenar el primer arreglo
 		for (int i = 0; i < 5; i++) {
+			System.out.print("Valor " + (i + 1) + " para el primer arreglo: ");
