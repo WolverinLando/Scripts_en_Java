@@ -1,37 +1,48 @@
 /* Autor:  Orlando Urbano Trejo @Lando
  * Fecha:  17-07-2023
  * Correo: orlandourbanotrejo@gmail.com
- * Algoritmo que imprima un arbol de navidad */
+ * Algoritmo que imprime un árbol de navidad
+ */
 
 import java.util.Scanner;
 
 public class Ejercicio28 {
     public static void main(String[] args) {
-		int altura, espacios, tronco;
-		// Creacion de objeto
-		Scanner orlando = new Scanner(System.in);
-		// Datos de entrada
+        // Crear objeto Scanner para entrada de datos
+        Scanner orlando = new Scanner(System.in);
+
+        // Solicitar la altura del árbol
         System.out.print("Altura del árbol: ");
-        altura = orlando.nextInt();
-		for(int i = 1; i <= altura; i++){
-        	espacios = altura - i;
-            // Imprimir espacios en blanco
-            for(int j = 1; j <= espacios; j++){
+        int altura = orlando.nextInt();
+        
+        // Imprimir la parte superior del árbol (hojas)
+        for (int i = 1; i <= altura; i++) {
+            // Calcular los espacios antes de los asteriscos
+            int espacios = altura - i;
+
+            // Imprimir los espacios
+            for (int j = 1; j <= espacios; j++) {
                 System.out.print(" ");
-            }  
-			// Imprimir asteriscos
-            for(int j = 1; j <= (2 * i - 1); j++){
+            }
+
+            // Imprimir los asteriscos
+            for (int j = 1; j <= (2 * i - 1); j++) {
                 System.out.print("*");
             }
-				System.out.println();
+
+            // Salto de línea después de cada fila del árbol
+            System.out.println();
         }
 
-        tronco = altura - 1;
         // Imprimir el tronco del árbol
-        for(int i = 1; i <= 2; i++){
-            for(int j = 1; j <= tronco; j++){
+        int tronco = altura - 1;
+        for (int i = 1; i <= 2; i++) {
+            // Imprimir espacios antes del tronco
+            for (int j = 1; j <= tronco; j++) {
                 System.out.print(" ");
             }
+
+            // Imprimir el tronco (dos asteriscos)
             System.out.println("**");
         }
     }
