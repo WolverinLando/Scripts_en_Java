@@ -1,23 +1,48 @@
 /* Autor:  Orlando Urbano Trejo @Lando
  * Fecha:  14-07-2023
  * Correo: orlandourbanotrejo@gmail.com
- * Algoritmo que suma tres numeros */
+ * Algoritmo que determina el descuento de un empleado
+ */
 
 import java.util.Scanner;
 
-public class Ejercicio20 {
-    public static void main(String[] args){
-    	int numero1, numero2, numero3;
-		// Creacion de objetos
-	    Scanner orlando = new Scanner(System.in);
-	    // Datos de entrada
-		System.out.print("Numero 1: ");
-	    numero1 = orlando.nextInt();
-       	System.out.print("Numero 2: ");
-       	numero2 = orlando.nextInt();
-       	System.out.print("Numero 3: ");
-       	numero3 = orlando.nextInt();
-       	System.out.print("Concatenacion: " + (numero1 + numero2 + numero3) + "\n");
+public class Ejercicio19 {
+
+    public static void main(String[] args) {
+        // Crear objeto Scanner para entrada de datos
+        Scanner orlando = new Scanner(System.in);
+
+        // Obtener y mostrar información del empleado
+        String nombre = obtenerNombre(orlando);
+        double salario = obtenerSalario(orlando);
+
+        // Calcular el salario con descuento
+        double salarioFinal = calcularSalarioConDescuento(salario);
+
+        // Mostrar el salario final
+        mostrarResultado(nombre, salarioFinal);
     }
-	
+
+    // Método para obtener el nombre del empleado
+    private static String obtenerNombre(Scanner scanner) {
+        System.out.print("Nombre: ");
+        return scanner.next();
+    }
+
+    // Método para obtener el salario del empleado
+    private static double obtenerSalario(Scanner scanner) {
+        System.out.print("Salario: ");
+        return scanner.nextDouble();
+    }
+
+    // Método para calcular el salario después del descuento
+    private static double calcularSalarioConDescuento(double salario) {
+        return salario - (salario * 0.20);
+    }
+
+    // Método para mostrar el resultado final
+    private static void mostrarResultado(String nombre, double salarioFinal) {
+        System.out.printf("Empleado: %s, su salario es: $%.2f%n", nombre, salarioFinal);
+    }
 }
+
