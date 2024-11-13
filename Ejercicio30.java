@@ -22,3 +22,5 @@ public class Ejercicio30 {
 			System.out.print("Valor " + (i + 1) + " para el primer arreglo: ");
 			Primero[i] = Orlando.nextInt();
 		}
+
+		// Llenar el segundo arreglo (en orden inverso)
