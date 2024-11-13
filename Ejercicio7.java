@@ -2,31 +2,51 @@
  * Fecha:  14-07-2023
  * Correo: orlandourbanotrejo@gmail.com
  *
- * Algoritmo para leer calificaciones de N alumnos y determinar el numero aprobados y reprobados */
+ * Algoritmo para leer calificaciones de N alumnos y determinar el número de aprobados y reprobados */
 
 import java.util.Scanner;
 
 public class Ejercicio7 {
     public static void main(String[] args) {
-        int alumnos;
+        int alumnos, aprobados = 0, reprobados = 0;
         double calificacion;
-        // Creacion de objeto
-		Scanner orlando = new Scanner(System.in);
-		// Datos de entrada
-  		System.out.print("Cantidad de alumnos: ");
+
+        // Creación del objeto Scanner
+        Scanner orlando = new Scanner(System.in);
+
+        // Datos de entrada para la cantidad de alumnos con validación
+        System.out.print("Cantidad de alumnos: ");
         alumnos = orlando.nextInt();
-        for(int i = 0; i < alumnos; i++){
-			// Recabar calificaciones de alumnos
-         	System.out.printf("Calificacion del alumno " + (i + 1) + "(1-100):\n");
-         	calificacion = orlando.nextDouble();
-				if(calificacion > 70){
-         			System.out.println("APROBADO");
-            } 
-            else{
-        		System.out.println("REPROBADO");
+        if (alumnos <= 0) {
+            System.out.println("Error: La cantidad de alumnos debe ser un número positivo.");
+            return;
+        }
+
+        // Ciclo para ingresar y evaluar cada calificación
+        for (int i = 0; i < alumnos; i++) {
+            System.out.printf("Calificación del alumno %d (1-100): ", i + 1);
+            calificacion = orlando.nextDouble();
+
+            // Validación de la calificación
+            if (calificacion < 1 || calificacion > 100) {
+                System.out.println("Error: La calificación debe estar entre 1 y 100.");
+                i--;  // Repetir la entrada para el mismo alumno
+                continue;
+            }
+
+            // Evaluación de la calificación
+            if (calificacion >= 70) {
+                System.out.println("APROBADO");
+                aprobados++;
+            } else {
+                System.out.println("REPROBADO");
+                reprobados++;
             }
         }
+
+        // Resultados finales
+        System.out.printf("Total de aprobados: %d%n", aprobados);
+        System.out.printf("Total de reprobados: %d%n", reprobados);
     }
 }
-
 
