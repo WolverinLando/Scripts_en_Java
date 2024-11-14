@@ -14,3 +14,4 @@ public class Ejercicio31{
 		System.out.print("-----CAFETERIA TESJI-----\n");
 		System.out.print("1) Pelota Verde\n");
 		System.out.print("2) Pelota Roja\n");
+		System.out.print("3) Pelota Amarilla\n");
