@@ -27,3 +27,4 @@ public class Ejercicio31{
 			System.out.print("Monto total: $" + Resultado + "\n");
 		}
 		else if(Pelota == 2){
+			System.out.print("Descuento 5%\n");
