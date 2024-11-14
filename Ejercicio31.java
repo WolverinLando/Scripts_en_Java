@@ -12,3 +12,4 @@ public class Ejercicio31{
 		int Pelota;
 		double Compra = 0, Resultado = 0;
 		System.out.print("-----CAFETERIA TESJI-----\n");
+		System.out.print("1) Pelota Verde\n");
