@@ -18,3 +18,5 @@ public class Ejercicio31{
 
 		System.out.print("Elige una opcion: ");
 		Pelota = Orlando.nextInt();
+
+		if(Pelota == 1){
