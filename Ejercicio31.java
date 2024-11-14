@@ -25,3 +25,5 @@ public class Ejercicio31{
 			Compra = Orlando.nextDouble();
 			Resultado = Compra - (Compra * 0.10);
 			System.out.print("Monto total: $" + Resultado + "\n");
+		}
+
