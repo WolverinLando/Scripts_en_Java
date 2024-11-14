@@ -15,3 +15,5 @@ public class Ejercicio31{
 		System.out.print("1) Pelota Verde\n");
 		System.out.print("2) Pelota Roja\n");
 		System.out.print("3) Pelota Amarilla\n");
+
+		System.out.print("Elige una opcion: ");
