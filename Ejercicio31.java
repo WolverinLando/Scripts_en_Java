@@ -20,3 +20,4 @@ public class Ejercicio31{
 		Pelota = Orlando.nextInt();
 
 		if(Pelota == 1){
+			System.out.print("Descuento 10%\n");
