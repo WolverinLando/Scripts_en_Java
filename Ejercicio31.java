@@ -23,3 +23,4 @@ public class Ejercicio31{
 			System.out.print("Descuento 10%\n");
 			System.out.print("Total de tus compras: ");
 			Compra = Orlando.nextDouble();
+			Resultado = Compra - (Compra * 0.10);
