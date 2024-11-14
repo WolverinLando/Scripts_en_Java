@@ -11,3 +11,4 @@ public class Ejercicio31{
 		Scanner Orlando = new Scanner(System.in);
 		int Pelota;
 		double Compra = 0, Resultado = 0;
+		System.out.print("-----CAFETERIA TESJI-----\n");
