@@ -29,3 +29,4 @@ public class Ejercicio31{
 		else if(Pelota == 2){
 			System.out.print("Descuento 5%\n");
 			System.out.print("Total de tus compras: ");
+			Compra = Orlando.nextDouble();
