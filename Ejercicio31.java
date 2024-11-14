@@ -10,3 +10,4 @@ public class Ejercicio31{
 	public static void main(String[] args){
 		Scanner Orlando = new Scanner(System.in);
 		int Pelota;
+		double Compra = 0, Resultado = 0;
