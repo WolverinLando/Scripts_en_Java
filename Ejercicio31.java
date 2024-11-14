@@ -17,3 +17,4 @@ public class Ejercicio31{
 		System.out.print("3) Pelota Amarilla\n");
 
 		System.out.print("Elige una opcion: ");
+		Pelota = Orlando.nextInt();
