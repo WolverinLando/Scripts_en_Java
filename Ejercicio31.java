@@ -26,4 +26,4 @@ public class Ejercicio31{
 			Resultado = Compra - (Compra * 0.10);
 			System.out.print("Monto total: $" + Resultado + "\n");
 		}
-
+		else if(Pelota == 2){
