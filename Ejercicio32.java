@@ -7,3 +7,4 @@
  → Fundamentos de programación.
  → Química.
  → Fundamentos de investigación.
+ → Matemáticas Discretas.
