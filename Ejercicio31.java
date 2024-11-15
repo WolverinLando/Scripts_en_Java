@@ -36,3 +36,5 @@ public class Ejercicio31{
 		}
 		
 		else if(Pelota == 3){
+			System.out.print("Descuento 15%\n");
+
