@@ -40,4 +40,4 @@ public class Ejercicio31{
 			System.out.print("Total de tus compras: ");
 			Compra = Orlando.nextDouble();
 			Resultado = Compra - (Compra * 0.15);
-
+			System.out.print("Monto total: $" + Resultado + "\n");
