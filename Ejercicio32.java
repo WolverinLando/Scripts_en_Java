@@ -6,3 +6,4 @@
  → Cálculo Diferencial.
  → Fundamentos de programación.
  → Química.
+ → Fundamentos de investigación.
