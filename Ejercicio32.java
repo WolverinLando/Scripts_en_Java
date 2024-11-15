@@ -9,3 +9,5 @@
  → Fundamentos de investigación.
  → Matemáticas Discretas.
  → Desarrollo Sustentable.
+ Recuerda que cada materia tiene 5 unidades, una vez obtenida cada calificación por unidad, calcula el promedio de cada materia. Finalmente, calcula el promedio general.*/
+
