@@ -44,3 +44,7 @@ public class Ejercicio31{
 		}
 		else {
 			System.out.print("Opcion no valida");
+		 }
+
+   }
+}
