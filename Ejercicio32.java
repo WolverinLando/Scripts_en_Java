@@ -4,3 +4,4 @@
  
  * Ejercicio: Haciendo uso de arreglos bidimensionales, solicita la calificación de las siguientes materias:
  → Cálculo Diferencial.
+ → Fundamentos de programación.
