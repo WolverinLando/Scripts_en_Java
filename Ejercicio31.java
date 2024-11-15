@@ -26,11 +26,12 @@ public class Ejercicio31{
 			Resultado = Compra - (Compra * 0.10);
 			System.out.print("Monto total: $" + Resultado + "\n");
 		}
+
 		else if(Pelota == 2){
 			System.out.print("Descuento 5%\n");
 			System.out.print("Total de tus compras: ");
 			Compra = Orlando.nextDouble();
 			Resultado = Compra - (Compra * 0.05);
 			System.out.print("Monto total: $" + Resultado + "\n");
-
+		}
 
