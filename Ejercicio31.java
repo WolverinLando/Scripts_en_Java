@@ -38,4 +38,5 @@ public class Ejercicio31{
 		else if(Pelota == 3){
 			System.out.print("Descuento 15%\n");
 			System.out.print("Total de tus compras: ");
+			Compra = Orlando.nextDouble();
 
