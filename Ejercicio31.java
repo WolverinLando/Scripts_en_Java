@@ -43,3 +43,4 @@ public class Ejercicio31{
 			System.out.print("Monto total: $" + Resultado + "\n");
 		}
 		else {
+			System.out.print("Opcion no valida");
